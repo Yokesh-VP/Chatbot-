@@ -2,4 +2,3 @@ fastapi
 fastapi.responses
 uvicorn
 mysql.connector
-re
