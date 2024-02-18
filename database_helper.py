@@ -1,10 +1,6 @@
 import mysql.connector
 global connection
-connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="root",
-        database="seasonal_tastes_db" )
+connection = mysql.connector.connect(host="localhost",user="root",password="root",database="seasonal_tastes_db" )
 def get_status_order(order_id:int):
     cursor = connection.cursor()
     query = "SELECT Status FROM order_tracking WHERE OrderID = %s"
